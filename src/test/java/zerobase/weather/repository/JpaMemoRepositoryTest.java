@@ -32,18 +32,16 @@ class JpaMemoRepositoryTest {
 
      }
 
-     @Test
-     void findByIdTest() {
-         //given
-         Memo newMemo = new Memo(11, "jpa");
+    @Test
+    void findByIdTest() {
+        //given
+        Memo newMemo = new Memo(190, "나는 소은");
 
-         //when
-         Memo memo = jpaMemoRepository.save(newMemo);
-         System.out.println(memo.getId());
-
-         //then
-         Optional<Memo> result = jpaMemoRepository.findById(memo.getId());
-         assertEquals(result.get().getId(), memo.getId());
-         assertEquals(result.get().getText(), "jpa");
-     }
+        //when
+        Memo memo = jpaMemoRepository.save(newMemo);
+        System.out.println(memo.getId());
+        //then
+        Optional<Memo> result = jpaMemoRepository.findById(memo.getId());
+        assertEquals("나는 소은", result.get().getText());
+    }
 }
