@@ -25,7 +25,7 @@ public class JdbcMemoRepository {
         return memo;
     }
 
-    public List<Memo> findAll(){
+    public List<Memo> findAll() {
         String sql = "select * from memo";
         return jdbcTemplate.query(sql, memoRowMapper());
     }
@@ -35,10 +35,8 @@ public class JdbcMemoRepository {
         return jdbcTemplate.query(sql, memoRowMapper(), id).stream().findFirst();
     }
 
-    private RowMapper<Memo> memoRowMapper() { //ResultSet을 스프링부트에 메모라는 클래스로 대입을 시켜야함 -> RowMapper
-        //jdbc를 통해 db에서 가져온 값의 타입은 ResultSet
-        //ResultSet의 형태 -> {id = 1, text = 'this is memo~'}
-        return(rs,rowNum) -> new Memo(
+    private RowMapper<Memo> memoRowMapper() {
+        return (rs, rowNum) -> new Memo(
                 rs.getInt("id"),
                 rs.getString("text")
         );
