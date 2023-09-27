@@ -7,8 +7,13 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Transactional;
+import zerobase.weather.domain.DateWeather;
 import zerobase.weather.domain.Diary;
+import zerobase.weather.repository.DateWeatherRepository;
 import zerobase.weather.repository.DiaryRepository;
 
 import java.io.BufferedReader;
@@ -24,27 +29,57 @@ import java.util.Map;
 @Slf4j
 @RequiredArgsConstructor
 @Service
+@Transactional(readOnly = true)
 public class DiaryService {
     private final DiaryRepository diaryRepository;
+    private final DateWeatherRepository dateWeatherRepository;
     @Value("${openweathermap.key}")
     private String apiKey;
 
-    public void createDiary(LocalDate date, String text) {
+    @Scheduled(cron = "0 0 1 * * *")
+    @Transactional
+    public void saveWeatherDate() {
+        dateWeatherRepository.save(getWeatherFromApi());
+    }
+    private DateWeather getWeatherFromApi() {
         //open weather map에서 데이터 받아오기
         String weatherData = getWeatherString();
         //받아온 날씨 데이터 파싱하기
         Map<String, Object> parsedWeather = parseWeather(weatherData);
-        //파싱된 데이터 + 일기 값 우리 db에 저장
-        saveData(date, text, parsedWeather);
+
+        //데이터 우리 DB에 저장
+        DateWeather dateWeather = new DateWeather();
+        dateWeather.setDate(LocalDate.now());
+        dateWeather.setWeather((String) parsedWeather.get("main"));
+        dateWeather.setIcon((String) parsedWeather.get("icon"));
+        dateWeather.setTemperature((Double) parsedWeather.get("temp"));
+        return dateWeather;
     }
 
-    private void saveData(LocalDate date, String text, Map<String, Object> parsedWeather) {
+    @Transactional(isolation = Isolation.SERIALIZABLE)
+    public void createDiary(LocalDate date, String text) {
+        //DB에서 날씨 데이터 가져오기
+        DateWeather dateWeather = getDateWeather(date);
+        //날씨 데이터 + 일기 값 우리 db에 저장
+        saveData(date, text, dateWeather);
+    }
+
+    private DateWeather getDateWeather(LocalDate date) {
+        List<DateWeather> dateWeatherListFromDB =
+                dateWeatherRepository.findAllByDate(date);
+        if (dateWeatherListFromDB.size() == 0) {
+            //새로 API에서 날씨 정보 가져와야 한다.
+            //과거날씨 조회는 유료 정책 상 현재 날씨를 가져오도록 하거나, 날씨 없이 일기를 쓰도록..
+            return getWeatherFromApi();
+        } else {
+            return dateWeatherListFromDB.get(0);
+        }
+    }
+
+    private void saveData(LocalDate date, String text, DateWeather weather) {
         Diary nowDiary = new Diary();
-        nowDiary.setWeather((String) parsedWeather.get("main"));
-        nowDiary.setIcon((String) parsedWeather.get("icon"));
-        nowDiary.setTemperature((Double) parsedWeather.get("temp"));
+        nowDiary.setDateWeather(weather);
         nowDiary.setText(text);
-        nowDiary.setDate(date);
         diaryRepository.save(nowDiary);
     }
 
@@ -67,7 +102,6 @@ public class DiaryService {
         JSONObject data = (JSONObject) weatherData.get(0);
         resultMap.put("main", data.get("main"));
         resultMap.put("icon", data.get("icon"));
-
         log.info(resultMap.toString());
 
         return resultMap;
@@ -89,7 +123,7 @@ public class DiaryService {
             }
             String inputLine;
             StringBuilder response = new StringBuilder();
-            while((inputLine = br.readLine()) != null) {
+            while ((inputLine = br.readLine()) != null) {
                 response.append(inputLine);
             }
             br.close();
@@ -100,10 +134,12 @@ public class DiaryService {
         }
     }
 
+    @Transactional(readOnly = true)
     public List<Diary> readDiary(LocalDate date) {
         return diaryRepository.findAllByDate(date);
     }
 
+    @Transactional(readOnly = true)
     public List<Diary> readDiaries(LocalDate startDate, LocalDate endDate) {
         return diaryRepository.findAllByDateBetween(startDate, endDate);
     }
