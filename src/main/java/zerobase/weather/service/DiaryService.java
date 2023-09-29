@@ -1,12 +1,6 @@
 package zerobase.weather.service;
 
 import lombok.RequiredArgsConstructor;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import zerobase.weather.domain.DateWeather;
@@ -14,13 +8,8 @@ import zerobase.weather.domain.Diary;
 import zerobase.weather.repository.DateWeatherRepository;
 import zerobase.weather.repository.DiaryRepository;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.time.LocalDate;
-import java.util.HashMap;
-import java.util.Map;
+
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -38,6 +27,7 @@ public class DiaryService {
 
         Diary diary = new Diary();
         diary.setDateWeather(dateWeather);
+        diary.setDate(date);
         diary.setText(text);
         diaryRepository.save(diary);
     }
