@@ -18,6 +18,7 @@ import java.net.URL;
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.List;
 
 @RequiredArgsConstructor
 @Service
@@ -87,5 +88,9 @@ public class DiaryService {
         map.put("temp", mainData.get("temp"));
 
         return map;
+    }
+
+    public List<Diary> readDiary(LocalDate date) {
+        return diaryRepository.findAllByDate(date);
     }
 }
