@@ -1,5 +1,6 @@
 package zerobase.weather.service;
 
+import lombok.RequiredArgsConstructor;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -7,6 +8,8 @@ import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import zerobase.weather.domain.Diary;
+import zerobase.weather.repository.DiaryRepository;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -16,14 +19,24 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
+@RequiredArgsConstructor
 @Service
 public class DiaryService {
+    private final DiaryRepository diaryRepository;
     @Value("${openweathermap.key}")
     private String apiKey;
     public void createDiary(LocalDate date, String text) {
-        String weatherDate = getWeatherString();
+        String weatherData = getWeatherString();
 
-        Map<String, Object> parsedWeather = parseWeather(weatherDate);
+        Map<String, Object> parsedWeather = parseWeather(weatherData);
+
+        Diary diary = new Diary();
+        diary.setWeather((String)parsedWeather.get("weather"));
+        diary.setIcon((String)parsedWeather.get("icon"));
+        diary.setTemperature((Double)parsedWeather.get("temp"));
+        diary.setText(text);
+        diary.setDate(date);
+        diaryRepository.save(diary);
     }
 
 
