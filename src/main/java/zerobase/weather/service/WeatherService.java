@@ -5,10 +5,13 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import zerobase.weather.WeatherApplication;
 import zerobase.weather.domain.DateWeather;
 import zerobase.weather.repository.DateWeatherRepository;
 
@@ -25,12 +28,14 @@ import java.util.Map;
 @Transactional
 public class WeatherService {
     private final DateWeatherRepository dateWeatherRepository;
+    private static final Logger logger = LoggerFactory.getLogger(WeatherApplication.class);
 
     @Value("${openweathermap.key}")
     private String apiKey;
 
     @Scheduled(cron="0 0 1 * * *")
     public void saveWeather() {
+        logger.info("날씨 데이터 쌓였습니다.");
         dateWeatherRepository.save(getWeatherFromApi());
     }
     public DateWeather getWeatherFromApi() {

@@ -1,0 +1,448 @@
+[2023-09-30 00:56:35:2354][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 4032 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 00:56:35:2374][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 00:56:37:4405][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 00:56:37:4543][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 2 JPA repository interfaces.
+[2023-09-30 00:56:39:6149][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 00:56:39:6170][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 00:56:39:6174][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 00:56:39:6174][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 00:56:39:6463][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 00:56:39:6464][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3967 ms
+[2023-09-30 00:56:40:6909][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 00:56:41:7708][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 00:56:41:7926][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 00:56:41:8108][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 00:56:42:8775][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 00:56:42:9160][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 00:56:44:11615][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 00:56:45:11675][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 00:56:47:13806][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 00:56:48:15023][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 00:56:48:15108][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 00:56:49:15759][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 15.012 seconds (JVM running for 16.274)
+[2023-09-30 00:57:07:33796][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-30 00:57:07:33800][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-09-30 00:57:07:33810][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+[2023-09-30 00:57:08:35219][http-nio-8080-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1009
+[2023-09-30 00:57:08:35220][http-nio-8080-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Connection is read-only. Queries leading to data modification are not allowed
+[2023-09-30 00:57:08:35254][http-nio-8080-exec-1] ERROR z.w.config.GlobalExceptionHandler - error from GlobalExceptionHandler
+[2023-09-30 00:57:36:1583][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 12660 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 00:57:36:1588][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 00:57:39:3779][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 00:57:39:3908][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101 ms. Found 2 JPA repository interfaces.
+[2023-09-30 00:57:40:5587][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 00:57:40:5598][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 00:57:40:5602][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 00:57:40:5603][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 00:57:41:5844][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 00:57:41:5846][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4147 ms
+[2023-09-30 00:57:41:6247][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 00:57:42:6791][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 00:57:42:6887][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 00:57:42:7001][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 00:57:42:7373][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 00:57:42:7591][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 00:57:44:8924][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 00:57:44:8977][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 00:57:45:10125][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 00:57:46:11181][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 00:57:46:11230][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 00:57:47:11775][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 11.366 seconds (JVM running for 12.275)
+[2023-09-30 00:58:20:44669][http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-30 00:58:20:44671][http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-09-30 00:58:20:44677][http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+[2023-09-30 00:58:21:46081][http-nio-8080-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1009
+[2023-09-30 00:58:21:46082][http-nio-8080-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Connection is read-only. Queries leading to data modification are not allowed
+[2023-09-30 00:58:21:46101][http-nio-8080-exec-2] ERROR z.w.config.GlobalExceptionHandler - error from GlobalExceptionHandler
+[2023-09-30 00:59:06:1795][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 21316 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 00:59:06:1805][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 00:59:08:3769][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 00:59:08:3868][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
+[2023-09-30 00:59:09:5257][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 00:59:09:5271][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 00:59:09:5275][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 00:59:09:5275][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 00:59:10:5480][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 00:59:10:5480][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3350 ms
+[2023-09-30 00:59:10:5799][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 00:59:11:6364][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 00:59:11:6457][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 00:59:11:6564][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 00:59:11:6919][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 00:59:11:7129][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 00:59:13:8927][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 00:59:13:8951][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 00:59:15:10633][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 00:59:16:11718][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 00:59:16:11772][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 00:59:17:12424][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 11.866 seconds (JVM running for 13.18)
+[2023-09-30 00:59:39:34457][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-30 00:59:39:34459][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-09-30 00:59:39:34463][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+[2023-09-30 00:59:40:35725][http-nio-8080-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1009
+[2023-09-30 00:59:40:35727][http-nio-8080-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Connection is read-only. Queries leading to data modification are not allowed
+[2023-09-30 00:59:40:35776][http-nio-8080-exec-1] ERROR z.w.config.GlobalExceptionHandler - error from GlobalExceptionHandler
+[2023-09-30 01:03:33:1752][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 15572 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 01:03:33:1758][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 01:03:35:4529][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 01:03:35:4722][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 144 ms. Found 2 JPA repository interfaces.
+[2023-09-30 01:03:38:6815][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 01:03:38:6834][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 01:03:38:6840][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 01:03:38:6841][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 01:03:38:7136][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 01:03:38:7136][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5253 ms
+[2023-09-30 01:03:38:7622][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 01:03:39:8609][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 01:03:40:8792][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 01:03:40:8946][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 01:03:40:9525][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 01:03:41:9930][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 01:03:42:11682][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 01:03:42:11712][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 01:03:44:13622][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 01:03:45:14733][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 01:03:46:14795][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 01:03:46:15436][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 14.998 seconds (JVM running for 15.974)
+[2023-09-30 01:05:48:2142][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 19768 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 01:05:48:2146][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 01:05:50:3897][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 01:05:50:4032][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 113 ms. Found 2 JPA repository interfaces.
+[2023-09-30 01:05:52:5921][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 01:05:52:5947][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 01:05:52:5953][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 01:05:52:5953][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 01:05:52:6220][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 01:05:52:6222][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3972 ms
+[2023-09-30 01:05:53:6624][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 01:05:53:7290][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 01:05:54:7424][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 01:05:54:7577][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 01:05:54:8036][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 01:05:55:8384][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 01:05:56:9971][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 01:05:56:10004][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 01:05:58:11961][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 01:05:59:13244][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 01:05:59:13355][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 01:06:00:14288][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 13.846 seconds (JVM running for 15.335)
+[2023-09-30 01:06:24:38119][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-30 01:06:24:38121][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-09-30 01:06:24:38127][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[2023-09-30 01:43:21:856][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 16204 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 01:43:21:858][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 01:43:22:1963][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 01:43:22:2057][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
+[2023-09-30 01:43:23:2970][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 01:43:23:2981][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 01:43:23:2984][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 01:43:23:2984][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 01:43:23:3139][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 01:43:23:3139][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2213 ms
+[2023-09-30 01:43:24:3461][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 01:43:24:3861][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 01:43:24:3935][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 01:43:24:4031][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 01:43:24:4433][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 01:43:25:4601][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 01:43:25:4778][main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: zerobase.weather.domain.DateWeather
+[2023-09-30 01:43:25:4779][main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: zerobase.weather.domain.DateWeather
+[2023-09-30 01:43:25:4780][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2023-09-30 01:43:25:4803][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2023-09-30 01:43:25:4807][main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2023-09-30 01:43:25:4826][main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2023-09-30 01:43:25:4866][main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: zerobase.weather.domain.DateWeather
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1160)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:911)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at zerobase.weather.WeatherApplication.main(WeatherApplication.java:14)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: zerobase.weather.domain.DateWeather
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+[2023-09-30 02:01:41:875][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 13368 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 02:01:41:878][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 02:01:42:2103][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 02:01:42:2184][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+[2023-09-30 02:01:43:3015][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 02:01:43:3024][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 02:01:43:3028][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 02:01:43:3028][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 02:01:43:3156][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 02:01:43:3156][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2225 ms
+[2023-09-30 02:01:44:3431][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 02:01:44:3762][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 02:01:44:3835][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 02:01:44:3908][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 02:01:44:4161][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 02:01:44:4280][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 02:01:45:4977][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 02:01:45:4987][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 02:01:46:5748][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 02:01:46:6192][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 02:01:46:6217][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 02:01:47:6487][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 6.21 seconds (JVM running for 6.731)
+[2023-09-30 02:29:55:878][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 19924 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 02:29:55:882][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 02:30:13:846][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 10172 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 02:30:13:849][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 02:30:15:2444][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 02:30:15:2519][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+[2023-09-30 02:30:16:3464][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 02:30:16:3474][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 02:30:16:3477][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 02:30:16:3477][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 02:30:16:3601][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 02:30:16:3601][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2682 ms
+[2023-09-30 02:30:16:3809][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 02:30:17:4156][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 02:30:17:4231][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 02:30:17:4314][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 02:30:17:4564][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 02:30:17:4701][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 02:30:18:5438][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 02:30:18:5448][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 02:30:19:6221][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 02:30:19:6677][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 02:30:19:6701][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 02:30:19:6939][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 6.725 seconds (JVM running for 7.173)
+[2023-09-30 02:30:54:41205][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-30 02:30:54:41206][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-09-30 02:30:54:41208][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2023-09-30 02:36:01:857][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 336 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 02:36:01:860][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 02:36:02:2032][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 02:36:03:2137][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
+[2023-09-30 02:36:04:3442][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 02:36:04:3455][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 02:36:04:3459][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 02:36:04:3459][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 02:36:04:3623][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 02:36:04:3624][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2710 ms
+[2023-09-30 02:36:04:3927][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 02:36:05:4493][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 02:36:05:4566][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 02:36:05:4639][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 02:36:05:4919][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 02:36:05:5071][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 02:36:06:5855][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 02:36:06:5867][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 02:36:07:6638][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 02:36:08:7127][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 02:36:08:7154][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 02:36:08:7399][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 7.143 seconds (JVM running for 7.648)
+[2023-09-30 02:37:38:97149][http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-30 02:37:38:97149][http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-09-30 02:37:38:97152][http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+[2023-09-30 02:55:40:788][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 15972 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 02:55:40:791][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 02:55:41:1814][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 02:55:41:1883][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+[2023-09-30 02:55:42:2750][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 02:55:42:2764][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 02:55:42:2767][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 02:55:42:2768][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 02:55:42:2908][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 02:55:42:2908][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2057 ms
+[2023-09-30 02:55:43:3110][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 02:55:43:3455][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 02:55:43:3519][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 02:55:43:3607][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 02:55:43:3896][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 02:55:44:4034][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 02:55:44:4783][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 02:55:44:4798][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 02:55:45:5702][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 02:55:46:6245][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 02:55:46:6275][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 02:55:46:6546][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 6.332 seconds (JVM running for 6.814)
+[2023-09-30 03:05:16:823][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 21064 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 03:05:16:827][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 03:05:17:1885][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 03:05:17:1961][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+[2023-09-30 03:05:18:2865][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 03:05:18:2875][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 03:05:18:2879][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 03:05:18:2880][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 03:05:18:3047][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 03:05:18:3047][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2164 ms
+[2023-09-30 03:05:19:3282][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 03:05:19:3655][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 03:05:19:3714][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 03:05:19:3775][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 03:05:19:4135][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 03:05:20:4322][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 03:05:20:5006][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 03:05:20:5019][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 03:05:21:5821][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 03:05:22:6370][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 03:05:22:6402][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 03:05:22:6658][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 6.425 seconds (JVM running for 6.876)
+[2023-09-30 03:06:23:1010][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 17532 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 03:06:23:1013][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 03:06:24:2127][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 03:06:24:2198][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+[2023-09-30 03:06:25:3056][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 03:06:25:3065][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 03:06:25:3068][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 03:06:25:3068][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 03:06:25:3216][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 03:06:25:3216][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2135 ms
+[2023-09-30 03:06:25:3403][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 03:06:26:3797][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 03:06:26:3877][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 03:06:26:3953][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 03:06:26:4270][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 03:06:26:4423][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 03:06:27:5098][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 03:06:27:5109][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 03:06:28:5900][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 03:06:28:6355][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 03:06:28:6379][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 03:06:28:6624][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 6.312 seconds (JVM running for 6.875)
+[2023-09-30 03:09:12:976][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 21340 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 03:09:12:980][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 03:09:13:2059][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 03:09:14:2128][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+[2023-09-30 03:09:14:2979][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 03:09:14:2989][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 03:09:14:2995][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 03:09:14:2995][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 03:09:15:3146][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 03:09:15:3147][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2097 ms
+[2023-09-30 03:09:15:3358][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 03:09:15:3733][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 03:09:15:3800][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 03:09:15:3864][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 03:09:16:4131][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 03:09:16:4263][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 03:09:16:4881][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 03:09:16:4892][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 03:09:17:5736][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 03:09:18:6242][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 03:09:18:6267][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 03:09:18:6530][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 6.259 seconds (JVM running for 6.791)
+[2023-09-30 03:09:43:31593][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-30 03:09:43:31594][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-09-30 03:09:43:31596][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2023-09-30 03:10:09:57238][http-nio-8080-exec-4] ERROR z.w.config.GlobalExceptionHandler - error from GlobalExceptionHandler
+[2023-09-30 03:21:07:1041][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 7088 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 03:21:07:1044][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 03:21:08:2393][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 03:21:09:2487][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+[2023-09-30 03:21:10:3721][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 03:21:10:3736][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 03:21:10:3741][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 03:21:10:3742][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 03:21:10:3926][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 03:21:10:3926][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2805 ms
+[2023-09-30 03:21:10:4225][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 03:21:11:4599][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 03:21:11:4689][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 03:21:11:4791][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 03:21:11:5120][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 03:21:11:5257][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 03:21:12:6216][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 03:21:12:6226][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 03:21:13:7226][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 03:21:14:7861][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 03:21:14:7891][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 03:21:14:8182][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 7.909 seconds (JVM running for 8.55)
+[2023-09-30 03:21:15:8427][scheduling-1] INFO  z.weather.service.WeatherService - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:21:20:13409][scheduling-1] INFO  z.weather.service.WeatherService - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:21:25:18407][scheduling-1] INFO  z.weather.service.WeatherService - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:21:30:23417][scheduling-1] INFO  z.weather.service.WeatherService - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:21:35:28404][scheduling-1] INFO  z.weather.service.WeatherService - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:21:40:33404][scheduling-1] INFO  z.weather.service.WeatherService - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:21:45:38413][scheduling-1] INFO  z.weather.service.WeatherService - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:23:11:796][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 13124 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 03:23:11:799][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 03:23:12:1949][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 03:23:12:2031][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+[2023-09-30 03:23:13:2856][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 03:23:13:2866][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 03:23:13:2868][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 03:23:13:2869][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 03:23:13:2998][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 03:23:13:2998][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2137 ms
+[2023-09-30 03:23:14:3218][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 03:23:14:3546][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 03:23:14:3598][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 03:23:14:3653][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 03:23:14:3903][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 03:23:14:4036][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 03:23:15:4709][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 03:23:15:4719][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 03:23:16:5503][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 03:23:16:5975][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 03:23:16:6000][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 03:23:17:6243][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 6.016 seconds (JVM running for 6.51)
+[2023-09-30 03:23:20:9120][scheduling-1] INFO  zerobase.weather.WeatherApplication - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:23:25:14103][scheduling-1] INFO  zerobase.weather.WeatherApplication - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:23:30:19100][scheduling-1] INFO  zerobase.weather.WeatherApplication - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:23:35:24103][scheduling-1] INFO  zerobase.weather.WeatherApplication - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:23:40:29102][scheduling-1] INFO  zerobase.weather.WeatherApplication - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:23:45:34102][scheduling-1] INFO  zerobase.weather.WeatherApplication - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:23:50:39104][scheduling-1] INFO  zerobase.weather.WeatherApplication - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:23:57:46645][scheduling-1] INFO  zerobase.weather.WeatherApplication - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:24:00:49103][scheduling-1] INFO  zerobase.weather.WeatherApplication - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:24:05:54100][scheduling-1] INFO  zerobase.weather.WeatherApplication - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:24:10:59101][scheduling-1] INFO  zerobase.weather.WeatherApplication - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:24:15:64099][scheduling-1] INFO  zerobase.weather.WeatherApplication - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:24:20:69103][scheduling-1] INFO  zerobase.weather.WeatherApplication - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:24:25:74091][scheduling-1] INFO  zerobase.weather.WeatherApplication - 날씨 데이터 쌓였습니다.
+[2023-09-30 03:36:08:786][main] INFO  zerobase.weather.WeatherApplication - Starting WeatherApplication using Java 11.0.20 on soni with PID 4768 (C:\spring_prac\weather\build\classes\java\main started by soens in C:\spring_prac\weather)
+[2023-09-30 03:36:08:790][main] INFO  zerobase.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-09-30 03:36:09:1900][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-09-30 03:36:09:1968][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+[2023-09-30 03:36:10:2871][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-09-30 03:36:10:2880][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-09-30 03:36:10:2883][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-09-30 03:36:10:2883][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[2023-09-30 03:36:10:3026][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-09-30 03:36:10:3026][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2168 ms
+[2023-09-30 03:36:10:3232][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-09-30 03:36:11:3666][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-09-30 03:36:11:3734][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-09-30 03:36:11:3817][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-09-30 03:36:11:4111][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-09-30 03:36:12:4241][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-09-30 03:36:12:4865][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-09-30 03:36:12:4876][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-09-30 03:36:13:5660][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-09-30 03:36:13:6172][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-09-30 03:36:13:6200][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-09-30 03:36:14:6522][main] INFO  zerobase.weather.WeatherApplication - Started WeatherApplication in 6.319 seconds (JVM running for 6.771)
+[2023-09-30 03:36:25:17987][http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-30 03:36:25:17989][http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-09-30 03:36:25:17991][http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2023-09-30 03:36:26:18317][http-nio-8080-exec-2] ERROR z.w.config.GlobalExceptionHandler - error from GlobalExceptionHandler
