@@ -29,7 +29,7 @@ public class WeatherService {
     @Value("${openweathermap.key}")
     private String apiKey;
 
-    @Scheduled(cron="0/5 * * * * *")
+    @Scheduled(cron="0 0 1 * * *")
     public void saveWeather() {
         dateWeatherRepository.save(getWeatherFromApi());
     }
