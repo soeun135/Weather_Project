@@ -8,6 +8,7 @@ import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import zerobase.weather.domain.Diary;
 import zerobase.weather.repository.DiaryRepository;
 
@@ -22,10 +23,13 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @Service
+@Transactional(readOnly = true)
 public class DiaryService {
     private final DiaryRepository diaryRepository;
     @Value("${openweathermap.key}")
     private String apiKey;
+
+    @Transactional
     public void createDiary(LocalDate date, String text) {
         String weatherData = getWeatherString();
 
@@ -98,6 +102,7 @@ public class DiaryService {
         return diaryRepository.findAllByDateBetween(startDate, endDate);
     }
 
+    @Transactional
     public void updateDiary(LocalDate date, String text) {
         Diary diary = diaryRepository.findFirstByDate(date);
         diary.setText(text);
@@ -105,6 +110,7 @@ public class DiaryService {
         diaryRepository.save(diary);
     }
 
+    @Transactional
     public void deleteDate(LocalDate date) {
         diaryRepository.deleteAllByDate(date);
     }
