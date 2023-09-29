@@ -22,7 +22,6 @@ public class DiaryService {
 
     @Transactional
     public void createDiary(LocalDate date, String text) {
-        //날씨 데이터 가져오기 (DB에서)
         DateWeather dateWeather = getDateWeather(date);
 
         Diary diary = new Diary();
@@ -35,9 +34,7 @@ public class DiaryService {
     private DateWeather getDateWeather(LocalDate date) {
         List<DateWeather> weather = dateWeatherRepository.findAllByDate(date);
 
-        if(weather.size() == 0) {
-            //새로 api에서 날씨 정보 가져와야하는데
-            //정책상 정하기 나름 현재 날씨 가져오도록 하거나 날씨 없이 일기 쓰도록
+        if (weather.size() == 0) {
             return weatherService.getWeatherFromApi();
         } else {
             return weather.get(0);
