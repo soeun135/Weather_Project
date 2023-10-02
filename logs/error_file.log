@@ -3,3 +3,31 @@
 [2023-10-02 19:41:14:90145][http-nio-8080-exec-10] ERROR z.w.config.GlobalExceptionHandler - INVALID_DATE is occurred
 [2023-10-02 19:41:36:112146][http-nio-8080-exec-1] ERROR z.w.config.GlobalExceptionHandler - START_DATE_EXCEED_END_DATE is occurred
 [2023-10-02 19:42:55:191179][http-nio-8080-exec-8] ERROR z.w.config.GlobalExceptionHandler - DIARY_IS_EMPTY is occurred
+[2023-10-02 20:28:52:6984][main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[2023-10-02 20:29:23:6452][main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
